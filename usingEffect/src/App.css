@@ -1,0 +1,87 @@
+.mainDiv {
+  background-image: url('https://static01.nyt.com/images/2016/04/17/multimedia/retro-dungeons-dragons/retro-dungeons-dragons-square640-v4.jpg');
+  background-size: 900px;
+  color: white;
+  margin:0;
+  padding-top: 20px;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  z-index: -2;
+}
+
+.scrollDiv {
+width: 100vw;
+background-color: red;
+height: fit-content;
+overflow: hidden;
+position: absolute;
+z-index: -1;
+margin-top: 230px;
+border: solid black 2px;
+}
+
+.backgroundScroller {
+  font-size: 7vw;
+  transform: translatex(100%);
+  animation: scroll 15s linear infinite;
+  padding: 0;
+  margin: 0;
+}
+
+.firstTitle {
+  margin: 0 30px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 12px;
+}
+
+.allMonsters {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.inputDiv {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.monsterName {
+  text-align: center;
+}
+
+.monsterImg {
+ width: 60%;
+ margin: 50px 0;
+ border-radius: 12px;
+ border: antiquewhite solid 2px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 15px;
+  border: antiquewhite solid 2px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 200px;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+  
+}
